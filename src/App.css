@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ctaUsBtn,
+.navFather {
+  background-color: #24252A;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navLinksLi,
+.ctaUsBtn,
+.navLink {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #edf0f1;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  max-height: 100px;
+  cursor: pointer;
+
+}
+
+.ctaUsBtn {
+  padding: 2px 40px;
+}
+
+.navFather {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.navBarLinks {
+  list-style: none;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navBarLinks li {
+  display: inline-block;
+  padding: 0px 20px
+}
+
+.navBarLinks li a {
+  transition: all 0.3s ease 0s;
+}
+
+.navBarLinks li a:hover {
+  color: #0088a9
+}
+
+.ctaUsBtn {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+}
+
+.ctaUsBtn:hover {
+
+  background-color: rgba(0, 136, 169, 0.8);
 }
