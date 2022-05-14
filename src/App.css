@@ -71,3 +71,7 @@
 
   background-color: rgba(0, 136, 169, 0.8);
 }
+
+.shopCartImg {
+  max-height: 40px;
+}

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logomini from './assets/imgs/logomini.png';
-
+import shopCartImg from './assets/imgs/shoppingCart.png'
 const Navbar = () => {
     return (
         <div className='navFather'>
@@ -13,6 +13,9 @@ const Navbar = () => {
                 </ul>
             </nav>
             <a className='ctaUs' href='#'><button className='ctaUsBtn'>Contáctanos</button></a>
+            <div className='divShopCart'>
+                <img className='shopCartImg' src={shopCartImg}></img>
+            </div>
         </div>
     );
 }
