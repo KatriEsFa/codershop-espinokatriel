@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from './Navbar.js';
+import Navbar from './componentes/Navbar.js';
 
 const App = () => { //arrow functions yeey
   return (

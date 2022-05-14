@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logomini from './assets/imgs/logomini.png';
-import shopCartImg from './assets/imgs/shoppingCart.png'
+import logomini from '../assets/imgs/logomini.png';
+import shopCartImg from '../assets/imgs/shoppingCart.png'
 const Navbar = () => {
     return (
         <div className='navFather'>
