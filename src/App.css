@@ -73,5 +73,23 @@
 }
 
 .shopCartImg {
-  max-height: 40px;
+  max-height: 30px;
+  cursor: pointer;
+}
+
+.divShopCart {
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(0, 136, 169, 1);
+  transition: all 0.3s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divShopCart:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+
+
 }
