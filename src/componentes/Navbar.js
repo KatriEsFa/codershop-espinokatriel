@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import logomini from '../assets/imgs/logomini.png';
 import CartWidget from '../componentes/CartWidget';
 const Navbar = () => {
