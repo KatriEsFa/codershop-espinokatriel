@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 
+
 const ItemCount = ({ stock, initial, onAdd }) => {
 
     const [counter, setCounter] = useState(initial);
@@ -27,7 +28,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
             </div>
         </div>
     );
-    // props necesarias del itemCount ·stock ·initial ·onAdd
+
 }
 
 export default ItemCount

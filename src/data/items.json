@@ -1,0 +1,244 @@
+[
+    {
+        "id": 1,
+        "type": "Remera",
+        "name": "Remera Under Armour Color Rojo",
+        "stock": 10,
+        "color": "Rojo",
+        "price": 1200,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Under Armour",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsolodeportes-9bvc3m9qgmf6g9x.stackpathdns.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Fbaa193a472891718a9656a0f6c3cd266%2F7%2F0%2F700021354536601-1.jpg&f=1&nofb=1",
+        "description": "Remera roja Under Armour, ideal para todo tipo de deportes. "
+    },
+    {
+        "id": 2,
+        "type": "Remera",
+        "name": "Remera Under Armour Color Negro",
+        "stock": 5,
+        "color": "Negro",
+        "price": 1200,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Under Armour",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.dexter.com.ar%2Fon%2Fdemandware.static%2F-%2FSites-dabra-catalog%2Fdefault%2Fdw0fcfe9a2%2Fproducts%2FUA_1354536-001%2FUA_1354536-001-1.JPG&f=1&nofb=1",
+        "description": "Remera negra Under Armour, ideal para todo tipo de deportes. "
+    },
+    {
+        "id": 3,
+        "type": "Short",
+        "name": "Short Under Armour Color Negro",
+        "stock": 6,
+        "color": "Negro",
+        "price": 1000,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Under Armour",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hites.com%2Fdw%2Fimage%2Fv2%2FBDPN_PRD%2Fon%2Fdemandware.static%2F-%2FSites-mastercatalog_HITES%2Fdefault%2Fdw36f79e52%2Fimages%2Foriginal%2Fpim%2F829478001%2F829478001_1.jpg%3Fsw%3D1000%26sh%3D1000&f=1&nofb=1",
+        "description": "Short Deportivo Under Armour de varón, porque la comodidad importa."
+    },
+    {
+        "id": 4,
+        "type": "Short",
+        "name": "Remera Under Armour Color Gris",
+        "stock": 5,
+        "color": "Gris",
+        "price": 1000,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Under Armour",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hites.com%2Fdw%2Fimage%2Fv2%2FBDPN_PRD%2Fon%2Fdemandware.static%2F-%2FSites-mastercatalog_HITES%2Fdefault%2Fdw36f79e52%2Fimages%2Foriginal%2Fpim%2F829478001%2F829478001_1.jpg%3Fsw%3D1000%26sh%3D1000&f=1&nofb=1",
+        "description": "Short Deportivo Under Armour de mujer color gris, porque la comodidad importa."
+    },
+    {
+        "id": 5,
+        "type": "Accesorio",
+        "name": "Guantes para pesas Everlast",
+        "stock": 5,
+        "color": "Gris",
+        "price": 700,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Everlast",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2FD_NQ_NP_766580-MCO31535894970_072019-O.jpg&f=1&nofb=1",
+        "description": "Guantes para levantar pesas Everlast en color gris, te ayudan a veitar callos y proteger tu muñeca."
+    },
+    {
+        "id": 6,
+        "type": "Accesorio",
+        "name": "Cinturon para pesa Everlasts",
+        "stock": 5,
+        "color": "Negro",
+        "price": 1500,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Everlast",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F71QNPiPCYTL._AC_UX679_.jpg&f=1&nofb=1",
+        "description": "Cinturón para levantamiento de pesas o halterofilia, porque la salud de tu espalda es importante."
+    },
+    {
+        "id": 7,
+        "type": "Accesorio",
+        "name": "Guantes de boxeo",
+        "stock": 5,
+        "color": "Rosado",
+        "price": 1000,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Everlast",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ksius.fr%2Fwp-content%2Fuploads%2F2017%2F06%2Fgants-de-boxe-everlast-pro-style-elite-rose-768x768.jpg&f=1&nofb=1",
+        "description": "Guantes de boxeo Everlast pro sttyle elite. Solo en color rosado"
+    },
+    {
+        "id": 8,
+        "type": "Accesorio",
+        "name": "Guantes Semiprofesional UFC kick boxing",
+        "stock": 10,
+        "color": "Negro",
+        "price": 850,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Everlast",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2Fguantes-everlast-semiprofesional-ufc-kick-boxing-nuevo-orig-D_NQ_NP_378011-MLM20454016969_102015-F.jpg&f=1&nofb=1",
+        "description": "Guantes semiprofesionales de UFC o kick boxing, nuevos y originales."
+    },
+    {
+        "id": 9,
+        "type": "Accesorio",
+        "name": "Guantes Semiprofesional UFC kick boxing",
+        "stock": 10,
+        "color": "Rosado",
+        "price": 850,
+        "availableSizes": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "brand": "Everlast",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F88%2Fae%2F20%2F88ae20b77dd702a2092021153f80bb0b.jpg&f=1&nofb=1",
+        "description": "Guantes semiprofesionales de UFC o kick boxing, nuevos y originales. Color rosado."
+    },
+    {
+        "id": 10,
+        "type": "Bebida",
+        "name": "Bebida rehidratante Gatorade",
+        "stock": 60,
+        "price": 75,
+        "availableFlavors": [
+            "Frutos Tropicales",
+            "Manzana",
+            "Cool blue",
+            "Naranja"
+        ],
+        "netContent": "500ml",
+        "brand": "Gatorade",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmercosurdistribuciones.com.ar%2Fimg%2Fgatorade.jpg&f=1&nofb=1",
+        "decription": "Bebida rehidratante que te ayuda a recuperar esas sales minerales que perdes durante un duro entrenamiento."
+    },
+    {
+        "id": 11,
+        "type": "Bebida",
+        "name": "Bebida rehidratante Powerade",
+        "stock": 60,
+        "price": 70,
+        "availableFlavors": [
+            "Limón",
+            "Moras",
+            "Frutas",
+            "Naranja"
+        ],
+        "netContent": "500ml",
+        "brand": "Powerade",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2142runners.com%2Fwp-content%2Fuploads%2F2017%2F06%2FPOWERADE.jpg%3Fx99386&f=1&nofb=1",
+        "decription": "Bebida rehidratante que te ayuda a recuperar esas sales minerales que perdes durante un duro entrenamiento."
+    },
+    {
+        "id": 12,
+        "type": "Suplemento",
+        "name": "Suplemento proteico WheyProtein",
+        "stock": 15,
+        "price": 1450,
+        "availableFlavors": [
+            "Frutilla",
+            "Chocolate",
+            "Vainilla"
+        ],
+        "netContent": "4.8L",
+        "brand": "WheyProtein",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fasr%2F124b89c9-9937-431c-9b2f-cd715855273d.011369ce5c8d125467806a677ed15ab1.jpeg%3FodnWidth%3D1000%26odnHeight%3D1000%26odnBg%3Dffffff&f=1&nofb=1",
+        "decription": "Suplemento porteico nutritivo, naturalmente saborizado, para esos días de entrenamiento power."
+    },
+    {
+        "id": 13,
+        "type": "Suplemento",
+        "name": "L-carnitina WheyProtein",
+        "stock": "14",
+        "price": 1650,
+        "availableFlavors": [
+            "Banana",
+            "Chocolate",
+            "Frutilla"
+        ],
+        "netContent": "2300G",
+        "brand": "WheyProtein",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.torqnutrition.com%2Fimage%2Fcache%2Fcatalog%2Fkombinayonlar%2F2019_01_19_12_34_06_yrnf8-600x600.png&f=1&nofb=1",
+        "decription": "L-carnitina Wheyprotein"
+    },
+    {
+        "id": 14,
+        "type": "Suplemento",
+        "name": "Creatina WheyProtein",
+        "stock": 4,
+        "price": 1650,
+        "availableFlavors": [
+            "Frutilla"
+        ],
+        "netContent": "500G",
+        "brand": "WheyProtein",
+        "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2Foriginal-whey-protein-bcaa-creatina-copo-suplementos-D_NQ_NP_931484-MLB31127235439_062019-F.jpg&f=1&nofb=1",
+        "decription": "Suplemento proteico 100% puro, WheyProtein, con vaso plástico de regalo."
+    }
+]
