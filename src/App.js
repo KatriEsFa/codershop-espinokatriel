@@ -7,7 +7,6 @@ const App = () => { //arrow functions yeey
     <div className="App">
       <Navbar />
       <ItemListContainer greeting='Hola Mundo! ItemListContainer' />
-
     </div>
   );
 }
