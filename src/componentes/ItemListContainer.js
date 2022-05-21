@@ -7,7 +7,7 @@ import itemList from './itemList';
 // setDatos(result)
 const ItemListContainer = ({ greeting }) => {
     const onAdd = (counter) => {
-        alert('Se han agregado' + counter + 'items al carrito!')
+        alert('Se han agregado ' + counter + 'items al carrito!')
     }
     const [datos, setDatos] = useState([]);
     useEffect(() => {
