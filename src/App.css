@@ -162,3 +162,17 @@ Fin de estilos del NavBar
 
 
 /* Estilos para el Contador de items */
+
+/*Estilo de las tarjetas*/
+.itemStyledContainer {
+  display: flex;
+  width: 325px;
+  height: 490px;
+}
+
+.itemImageDiv {
+  min-height: 400px;
+  max-height: 400px;
+}
+
+.itemFooterDiv {}

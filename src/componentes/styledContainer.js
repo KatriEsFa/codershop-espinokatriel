@@ -1,6 +1,6 @@
 const ItemsStyledContainer = () => {
     return (
-        <div>
+        <div className="itemStyledContainer">
 
         </div>
     );

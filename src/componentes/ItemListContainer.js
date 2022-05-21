@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Items from '../data/items.json';
 import itemList from './itemList';
 
-// setDatos(result)
+
 const ItemListContainer = ({ greeting }) => {
     const onAdd = (counter) => {
         alert('Se han agregado ' + counter + 'items al carrito!')
@@ -18,7 +18,7 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <>
             <h2>{greeting}</h2>
-            <itemList items={itemList} />
+            <itemList arrayObjetos={datos} />
             <ItemCount stock={5} initial={1} onAdd={onAdd} />
         </>
     );

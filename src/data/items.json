@@ -6,7 +6,7 @@
         "stock": 10,
         "color": "Rojo",
         "price": 1200,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -24,7 +24,7 @@
         "stock": 5,
         "color": "Negro",
         "price": 1200,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -42,7 +42,7 @@
         "stock": 6,
         "color": "Negro",
         "price": 1000,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -60,7 +60,7 @@
         "stock": 5,
         "color": "Gris",
         "price": 1000,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -78,7 +78,7 @@
         "stock": 5,
         "color": "Gris",
         "price": 700,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -96,7 +96,7 @@
         "stock": 5,
         "color": "Negro",
         "price": 1500,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -114,7 +114,7 @@
         "stock": 5,
         "color": "Rosado",
         "price": 1000,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -132,7 +132,7 @@
         "stock": 10,
         "color": "Negro",
         "price": 850,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -150,7 +150,7 @@
         "stock": 10,
         "color": "Rosado",
         "price": 850,
-        "availableSizes": [
+        "availables": [
             "XS",
             "S",
             "M",
@@ -167,7 +167,7 @@
         "name": "Bebida rehidratante Gatorade",
         "stock": 60,
         "price": 75,
-        "availableFlavors": [
+        "availables": [
             "Frutos Tropicales",
             "Manzana",
             "Cool blue",
@@ -184,7 +184,7 @@
         "name": "Bebida rehidratante Powerade",
         "stock": 60,
         "price": 70,
-        "availableFlavors": [
+        "availables": [
             "Limón",
             "Moras",
             "Frutas",
@@ -201,7 +201,7 @@
         "name": "Suplemento proteico WheyProtein",
         "stock": 15,
         "price": 1450,
-        "availableFlavors": [
+        "availables": [
             "Frutilla",
             "Chocolate",
             "Vainilla"
@@ -217,7 +217,7 @@
         "name": "L-carnitina WheyProtein",
         "stock": "14",
         "price": 1650,
-        "availableFlavors": [
+        "availables": [
             "Banana",
             "Chocolate",
             "Frutilla"
@@ -233,7 +233,7 @@
         "name": "Creatina WheyProtein",
         "stock": 4,
         "price": 1650,
-        "availableFlavors": [
+        "availables": [
             "Frutilla"
         ],
         "netContent": "500G",
