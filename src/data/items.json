@@ -176,7 +176,7 @@
         "netContent": "500ml",
         "brand": "Gatorade",
         "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmercosurdistribuciones.com.ar%2Fimg%2Fgatorade.jpg&f=1&nofb=1",
-        "decription": "Bebida rehidratante que te ayuda a recuperar esas sales minerales que perdes durante un duro entrenamiento."
+        "description": "Bebida rehidratante que te ayuda a recuperar esas sales minerales que perdes durante un duro entrenamiento."
     },
     {
         "id": 11,
@@ -193,7 +193,7 @@
         "netContent": "500ml",
         "brand": "Powerade",
         "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2142runners.com%2Fwp-content%2Fuploads%2F2017%2F06%2FPOWERADE.jpg%3Fx99386&f=1&nofb=1",
-        "decription": "Bebida rehidratante que te ayuda a recuperar esas sales minerales que perdes durante un duro entrenamiento."
+        "description": "Bebida rehidratante que te ayuda a recuperar esas sales minerales que perdes durante un duro entrenamiento."
     },
     {
         "id": 12,
@@ -209,7 +209,7 @@
         "netContent": "4.8L",
         "brand": "WheyProtein",
         "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fasr%2F124b89c9-9937-431c-9b2f-cd715855273d.011369ce5c8d125467806a677ed15ab1.jpeg%3FodnWidth%3D1000%26odnHeight%3D1000%26odnBg%3Dffffff&f=1&nofb=1",
-        "decription": "Suplemento porteico nutritivo, naturalmente saborizado, para esos días de entrenamiento power."
+        "description": "Suplemento porteico nutritivo, naturalmente saborizado, para esos días de entrenamiento power."
     },
     {
         "id": 13,
@@ -225,7 +225,7 @@
         "netContent": "2300G",
         "brand": "WheyProtein",
         "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.torqnutrition.com%2Fimage%2Fcache%2Fcatalog%2Fkombinayonlar%2F2019_01_19_12_34_06_yrnf8-600x600.png&f=1&nofb=1",
-        "decription": "L-carnitina Wheyprotein"
+        "description": "L-carnitina Wheyprotein"
     },
     {
         "id": 14,
@@ -239,6 +239,6 @@
         "netContent": "500G",
         "brand": "WheyProtein",
         "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhttp2.mlstatic.com%2Foriginal-whey-protein-bcaa-creatina-copo-suplementos-D_NQ_NP_931484-MLB31127235439_062019-F.jpg&f=1&nofb=1",
-        "decription": "Suplemento proteico 100% puro, WheyProtein, con vaso plástico de regalo."
+        "description": "Suplemento proteico 100% puro, WheyProtein, con vaso plástico de regalo."
     }
 ]

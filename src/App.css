@@ -86,6 +86,7 @@ Estilos del NavBar
   border-radius: 50px;
   height: 60px;
   width: 60px;
+  min-width: 60px;
   background-color: rgba(0, 136, 169, 1);
   transition: all 0.3s ease 0s;
   display: flex;
@@ -117,6 +118,13 @@ Estilos del NavBar
 /*························
 Fin de estilos del NavBar
 ··························*/
+
+
+
+
+/*········································
+ Estilos para el Contador de items 
+ ·········································*/
 .itemCountDiv {
   display: flex;
   flex-direction: column;
@@ -159,20 +167,84 @@ Fin de estilos del NavBar
 }
 
 
+/*········································
+  Fin de estilos para el Contador de items 
+ ·········································*/
 
 
-/* Estilos para el Contador de items */
 
-/*Estilo de las tarjetas*/
-.itemStyledContainer {
+/*··········································
+Estilo de las tarjetas
+············································*/
+.itemsStyledContainer {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.singleItemContainer {
+  display: flex;
+  flex-direction: column;
   width: 325px;
-  height: 490px;
+  max-height: 490px;
+  margin: 0px;
+  padding: 25px;
+  transform: translateX(-5px);
+
 }
 
-.itemImageDiv {
-  min-height: 400px;
-  max-height: 400px;
+.singleItemContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 24px 25px, rgba(0, 0, 0, 0.12) 0px -10px 23px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 10px 11px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.itemFooterDiv {}
+.productInfoDiv {
+  display: none;
+
+}
+
+
+.singleItemContainer:hover .itemFooterDiv .productInfoDiv {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50px);
+}
+
+.itemImageTag {
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.itemFooterDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.itemTitlePar {
+  font-weight: 700;
+}
+
+.itemDescriptionPar {
+  font-weight: 400;
+  color: grey;
+}
+
+
+.itemPriceDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #42d189;
+  font-weight: 1000;
+
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+}
+
+/*··········································
+Fin De Estilo de las tarjetas
+············································*/
