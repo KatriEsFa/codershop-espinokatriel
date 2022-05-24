@@ -1,13 +1,8 @@
-// import { setState } from 'react';
-
-const Item = ({ key, title, price, stock, itemImg, description, brand, availables }) => {
-
-    // const productInfo = document.getElementsByClassName('productInfoDiv');
-
-    // productInfo.addEventListener('mouseover', () => {
-    //     element.classList.add('visible')
-    // })
-
+const Item = ({ title, price, stock, itemImg, description, brand, availables }) => {
+    const opcionesDisponibles = [];
+    availables.forEach((data, index) => {
+        opcionesDisponibles.push(<span key={`${index}_${data}`}>{data}, </span>)
+    });
     return (
         <div className="singleItemContainer">
             <div className="itemImageDiv">
@@ -19,10 +14,9 @@ const Item = ({ key, title, price, stock, itemImg, description, brand, available
                         <p className="itemTitlePar">{title}</p>
                         <p className="itemDescriptionPar">{description}</p>
                     </div>
-                    {/* Estas de abajo sin hover llevan display: none;
-                     */}
+
                     <div className="productInfoDiv">
-                        <p className="itemAvailablesPar">Disponible en: {availables}</p>
+                        <p className="itemAvailablesPar">Disponible en: {opcionesDisponibles}</p>
                         <p className="itemBrandPar">Marca: {brand}</p>
                         <p className="itemStockPar">Stock disponible: {stock}</p>
                     </div>
@@ -34,7 +28,6 @@ const Item = ({ key, title, price, stock, itemImg, description, brand, available
         </div>
     );
 }
-//Stock y disponibiles por hacer, disponibles debe variar si son sabores o size
-//Que hago con el Key?
+
 
 export default Item

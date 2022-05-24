@@ -180,7 +180,8 @@ Estilo de las tarjetas
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
+  align-items: center;
+  justify-content: center;
 }
 
 .singleItemContainer {
@@ -190,8 +191,7 @@ Estilo de las tarjetas
   max-height: 490px;
   margin: 0px;
   padding: 25px;
-  transform: translateX(-5px);
-
+  transition: all 0.3s ease 0s;
 }
 
 .singleItemContainer:hover {
@@ -199,20 +199,25 @@ Estilo de las tarjetas
 }
 
 .productInfoDiv {
-  display: none;
-
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
 }
 
+/*·······HoverStlyes··········*/
+.singleItemContainer:hover .itemDescriptionPar {
+  color: black;
+}
 
 .singleItemContainer:hover .itemFooterDiv .productInfoDiv {
   display: flex;
   flex-direction: column;
-  transform: translateY(-50px);
+  visibility: visible;
 }
 
 .itemImageTag {
   max-height: 200px;
   max-width: 100%;
+
 }
 
 .itemFooterDiv {
@@ -228,6 +233,7 @@ Estilo de las tarjetas
 .itemDescriptionPar {
   font-weight: 400;
   color: grey;
+  transition: all 0.3s ease 0s;
 }
 
 
