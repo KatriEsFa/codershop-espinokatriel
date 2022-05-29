@@ -2,7 +2,8 @@ import ItemCount from './ItemCount';
 import customFetch from './customFetch';
 import { useEffect, useState } from 'react';
 import Items from '../data/items.json';
-import ItemList from './ItemList';
+import ItemDetailContainer from './ItemDetailContainer';
+// import ItemList from './ItemList';
 
 
 const ItemListContainer = ({ greeting }) => {
@@ -22,8 +23,10 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <>
             <h2>{greeting}</h2>
-            <ItemList arrayObjetos={datos} />
-            <ItemCount stock={5} initial={1} onAdd={onAdd} />
+            <ItemDetailContainer />
+            {/* <ItemList arrayObjetos={datos} /> */}
+
+            {/* <ItemCount stock={5} initial={1} onAdd={onAdd} /> */}
         </>
     );
 }

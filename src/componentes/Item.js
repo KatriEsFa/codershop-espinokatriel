@@ -1,8 +1,5 @@
 const Item = ({ title, price, stock, itemImg, description, brand, availables }) => {
-    const opcionesDisponibles = [];
-    availables.forEach((data, index) => {
-        opcionesDisponibles.push(<span key={`${index}_${data}`}>{data}, </span>)
-    });
+
     return (
         <div className="singleItemContainer">
             <div className="itemImageDiv">
@@ -16,7 +13,7 @@ const Item = ({ title, price, stock, itemImg, description, brand, availables }) 
                     </div>
 
                     <div className="productInfoDiv">
-                        <p className="itemAvailablesPar">Disponible en: {opcionesDisponibles}</p>
+                        <p className="itemAvailablesPar">Disponible en: {availables?.join(", ")}</p>
                         <p className="itemBrandPar">Marca: {brand}</p>
                         <p className="itemStockPar">Stock disponible: {stock}</p>
                     </div>
