@@ -10,8 +10,8 @@ const App = () => { //arrow functions yeey
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={<ItemListContainer greeting='Hola Mundo! ItemListContainer' />} />
-          <Route path='/category/:id' element={<ItemListContainer greeting='Hola Mundo! ItemListContainer' />} />
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/category/:id' element={<ItemListContainer />} />
           <Route path='/item/:id' element={<ItemDetailContainer />} />
           <Route />
         </Routes>
