@@ -1,7 +1,12 @@
-const Item = ({ title, price, stock, itemImg, description, brand, availables }) => {
+import { GiAbdominalArmor, GiTwoCoins } from 'react-icons/gi';
+import { DiDatabase } from 'react-icons/di';
+import { Link } from 'react-router-dom';
+
+const Item = ({ id, title, price, stock, itemImg, description }) => {
 
     return (
         <div className="singleItemContainer">
+
             <div className="itemImageDiv">
                 <img className="itemImageTag" src={itemImg} alt={description} />
             </div>
@@ -9,19 +14,21 @@ const Item = ({ title, price, stock, itemImg, description, brand, availables }) 
                 <div className="itemFooterParticularitiesDiv">
                     <div>
                         <p className="itemTitlePar">{title}</p>
-                        <p className="itemDescriptionPar">{description}</p>
                     </div>
+                </div>
 
-                    <div className="productInfoDiv">
-                        <p className="itemAvailablesPar">Disponible en: {availables?.join(", ")}</p>
-                        <p className="itemBrandPar">Marca: {brand}</p>
-                        <p className="itemStockPar">Stock disponible: {stock}</p>
-                    </div>
-                </div>
-                <div className="itemPriceDiv">
-                    <p>${price}</p>
-                </div>
             </div>
+            <div className="itemHoverInfo">
+                <div className="itemPriceDiv">
+                    <p> <GiTwoCoins />${price}</p>
+                </div>
+                <div className='itemStockContainer'>
+                    <p><DiDatabase />Stock {stock}</p>
+                </div>
+                <Link className='itemDetailContainer' to={`/item/${id}`}> <GiAbdominalArmor />Detalles</Link>
+
+            </div>
+
         </div>
     );
 }

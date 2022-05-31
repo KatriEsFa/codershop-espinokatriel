@@ -191,29 +191,68 @@ Estilo de las tarjetas
   width: 325px;
   max-height: 490px;
   margin: 0px;
-  padding: 25px;
+  padding: 55px;
   transition: all 0.3s ease 0s;
+  position: relative;
 }
 
 .singleItemContainer:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 24px 25px, rgba(0, 0, 0, 0.12) 0px -10px 23px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 10px 11px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.productInfoDiv {
-  visibility: hidden;
-  transition: all 0.3s ease 0s;
-}
 
 /*·······HoverStlyes··········*/
 .singleItemContainer:hover .itemDescriptionPar {
   color: black;
 }
 
-.singleItemContainer:hover .itemFooterDiv .productInfoDiv {
+.itemHoverInfo {
+  display: none;
+  transition: all 0.3s ease 0s;
+
+
+}
+
+.itemPriceDiv {
+  font-weight: 1000;
+}
+
+.singleItemContainer:hover .itemHoverInfo {
   display: flex;
   flex-direction: column;
-  visibility: visible;
+  background-color: rgba(0, 0, 0, 0.19);
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  overflow: visible;
 }
+
+.itemPriceDiv,
+.itemStockContainer,
+.itemDetailContainer {
+  padding: 3px;
+  background-color: #edf0f1;
+  border-radius: 50px;
+  max-width: 150px;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: center;
+  background-color: rgba(0, 136, 169, 1);
+  color: #edf0f1;
+}
+
+.itemPriceDiv:hover,
+.itemStockContainer:hover,
+.itemDetailContainer:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/*·····Fin HoverStyles·······*/
 
 .itemImageTag {
   max-height: 200px;
@@ -238,14 +277,7 @@ Estilo de las tarjetas
 }
 
 
-.itemPriceDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #42d189;
-  font-weight: 1000;
 
-}
 
 
 
@@ -261,17 +293,21 @@ Estilo del item Detail
 }
 
 .imageDivItemDetail {
-  max-height: 100%;
   margin-left: 50px;
   margin-right: 50px;
+  max-width: 33vw;
 }
+
+.imageItemDetail {
+  max-height: 50%;
+}
+
 
 .infoDivItemDetail {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   align-items: center;
-  justify-content: center;
+  margin-top: 150px;
 }
 
 .priceDivItemDetail {

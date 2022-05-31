@@ -1,12 +1,21 @@
 import './App.css';
 import Navbar from './componentes/Navbar.js';
 import ItemListContainer from './componentes/ItemListContainer';
+import ItemDetailContainer from './componentes/ItemDetailContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => { //arrow functions yeey
   return (
     <div className="App">
-      <Navbar />
-      <ItemListContainer greeting='Hola Mundo! ItemListContainer' />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<ItemListContainer greeting='Hola Mundo! ItemListContainer' />} />
+          <Route path='/category/:id' element={<ItemListContainer greeting='Hola Mundo! ItemListContainer' />} />
+          <Route path='/item/:id' element={<ItemDetailContainer />} />
+          <Route />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

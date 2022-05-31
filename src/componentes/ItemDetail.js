@@ -14,7 +14,7 @@ const ItemDetail = ({ item }) => {
                     ?
                     <div className="detailFatherContainer">
                         <div className="imageDivItemDetail">
-                            <img src={item.image} alt={item.description} />
+                            <img src={item.image} alt={item.description} className='imageItemDetail' />
                         </div>
                         <div className="infoDivItemDetail">
                             <div className="titleDivItemDetail">
@@ -29,7 +29,7 @@ const ItemDetail = ({ item }) => {
                             <div className="stockDivItemDetail">
                                 <h3>Contamos con {item.stock} unidades en stock</h3>
                             </div>
-                            <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+                            <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
                         </div>
 
                     </div>

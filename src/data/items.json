@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "type": "Remera",
+        "type": "Ropa",
         "name": "Remera Under Armour Color Rojo",
         "stock": 10,
         "color": "Rojo",
@@ -19,7 +19,7 @@
     },
     {
         "id": 2,
-        "type": "Remera",
+        "type": "Ropa",
         "name": "Remera Under Armour Color Negro",
         "stock": 5,
         "color": "Negro",
@@ -37,7 +37,7 @@
     },
     {
         "id": 3,
-        "type": "Short",
+        "type": "Ropa",
         "name": "Short Under Armour Color Negro",
         "stock": 6,
         "color": "Negro",
@@ -55,7 +55,7 @@
     },
     {
         "id": 4,
-        "type": "Short",
+        "type": "Ropa",
         "name": "Remera Under Armour Color Gris",
         "stock": 5,
         "color": "Gris",
