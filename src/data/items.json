@@ -1,7 +1,10 @@
 [
     {
         "id": 1,
-        "type": "Ropa",
+        "category": {
+            "name": "Ropa",
+            "id": 1
+        },
         "name": "Remera Under Armour Color Rojo",
         "stock": 10,
         "color": "Rojo",
@@ -19,7 +22,10 @@
     },
     {
         "id": 2,
-        "type": "Ropa",
+        "category": {
+            "name": "Ropa",
+            "id": 1
+        },
         "name": "Remera Under Armour Color Negro",
         "stock": 5,
         "color": "Negro",
@@ -37,7 +43,10 @@
     },
     {
         "id": 3,
-        "type": "Ropa",
+        "category": {
+            "name": "Ropa",
+            "id": 1
+        },
         "name": "Short Under Armour Color Negro",
         "stock": 6,
         "color": "Negro",
@@ -55,7 +64,10 @@
     },
     {
         "id": 4,
-        "type": "Ropa",
+        "category": {
+            "name": "Ropa",
+            "id": 1
+        },
         "name": "Remera Under Armour Color Gris",
         "stock": 5,
         "color": "Gris",
@@ -73,7 +85,10 @@
     },
     {
         "id": 5,
-        "type": "Accesorio",
+        "category": {
+            "name": "Accesorio",
+            "id": 2
+        },
         "name": "Guantes para pesas Everlast",
         "stock": 5,
         "color": "Gris",
@@ -91,7 +106,10 @@
     },
     {
         "id": 6,
-        "type": "Accesorio",
+        "category": {
+            "name": "Accesorio",
+            "id": 2
+        },
         "name": "Cinturon para pesa Everlasts",
         "stock": 5,
         "color": "Negro",
@@ -109,7 +127,10 @@
     },
     {
         "id": 7,
-        "type": "Accesorio",
+        "category": {
+            "name": "Accesorio",
+            "id": 2
+        },
         "name": "Guantes de boxeo",
         "stock": 5,
         "color": "Rosado",
@@ -127,7 +148,10 @@
     },
     {
         "id": 8,
-        "type": "Accesorio",
+        "category": {
+            "name": "Accesorio",
+            "id": 2
+        },
         "name": "Guantes Semiprofesional UFC kick boxing",
         "stock": 10,
         "color": "Negro",
@@ -145,7 +169,10 @@
     },
     {
         "id": 9,
-        "type": "Accesorio",
+        "category": {
+            "name": "Accesorio",
+            "id": 2
+        },
         "name": "Guantes Semiprofesional UFC kick boxing",
         "stock": 10,
         "color": "Rosado",
@@ -163,7 +190,10 @@
     },
     {
         "id": 10,
-        "type": "Bebida",
+        "category": {
+            "name": "Bebida",
+            "id": 3
+        },
         "name": "Bebida rehidratante Gatorade",
         "stock": 60,
         "price": 75,
@@ -180,7 +210,10 @@
     },
     {
         "id": 11,
-        "type": "Bebida",
+        "category": {
+            "name": "Bebida",
+            "id": 3
+        },
         "name": "Bebida rehidratante Powerade",
         "stock": 60,
         "price": 70,
@@ -197,7 +230,10 @@
     },
     {
         "id": 12,
-        "type": "Suplemento",
+        "category": {
+            "name": "Suplemento",
+            "id": 4
+        },
         "name": "Suplemento proteico WheyProtein",
         "stock": 15,
         "price": 1450,
@@ -213,7 +249,10 @@
     },
     {
         "id": 13,
-        "type": "Suplemento",
+        "category": {
+            "name": "Suplemento",
+            "id": 4
+        },
         "name": "L-carnitina WheyProtein",
         "stock": "14",
         "price": 1650,
@@ -229,7 +268,10 @@
     },
     {
         "id": 14,
-        "type": "Suplemento",
+        "category": {
+            "name": "Suplemento",
+            "id": 4
+        },
         "name": "Creatina WheyProtein",
         "stock": 4,
         "price": 1650,

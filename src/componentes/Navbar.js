@@ -10,10 +10,10 @@ const Navbar = () => {
             </Link>
             <nav>
                 <ul className='navBarLinks'>
-                    <li className='navLinksLi'><a href='#' className='navLink'>Ropa</a></li>
-                    <li className='navLinksLi'><a href='#' className='navLink'>Suplementos</a></li>
-                    <li className='navLinksLi'><a href='#' className='navLink'>Accesorios</a></li>
-                    <li className='navLinksLi'><a href='#' className='navLink'>Bebidas</a></li>
+                    <li className='navLinksLi'><link to='/category/' className='navLink'>Ropa</link></li>
+                    <li className='navLinksLi'><link to='/category/' className='navLink'>Accesorios</link></li>
+                    <li className='navLinksLi'><link to='/category/' className='navLink'>Suplementos</link></li>
+                    <li className='navLinksLi'><link to='/category/' className='navLink'>Bebidas</link></li>
                 </ul>
             </nav>
             <a className='ctaUs' href='#'><button className='ctaUsBtn'>Contáctanos</button></a>
