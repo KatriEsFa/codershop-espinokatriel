@@ -9,7 +9,6 @@ const ItemList = ({ arrayObjetos }) => {
                     : <p>Cargando Contenido...</p>
             }
         </div>
-
     );
 }
 

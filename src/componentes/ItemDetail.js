@@ -1,9 +1,16 @@
 import ItemCount from "./ItemCount";
+import CartCheckOut from "./CartCheckout";
+import { useState } from "react";
+// import addToCart from './';
+
 
 const ItemDetail = ({ item }) => {
+    const [itemCounter, setItemCounter] = useState(0)
 
     const onAdd = (count) => {
-        alert('Se han agregado ' + count + ' items al carrito!')
+        // addToCart(item)
+        alert('Se han agregado ' + count + ' items al carrito!');
+        setItemCounter(count)
     }
 
     return (
@@ -29,7 +36,11 @@ const ItemDetail = ({ item }) => {
                             <div className="stockDivItemDetail">
                                 <h3>Contamos con {item.stock} unidades en stock</h3>
                             </div>
-                            <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
+                            {
+                                itemCounter === 0
+                                    ? <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
+                                    : <CartCheckOut />
+                            }
                         </div>
 
                     </div>

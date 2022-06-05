@@ -1,4 +1,3 @@
-import ItemCount from './ItemCount';
 import customFetch from './customFetch';
 import { useEffect, useState } from 'react';
 import Items from '../data/items.json';
@@ -25,15 +24,10 @@ const ItemListContainer = () => {
 
     }, [id]);
 
-    const onAdd = (counter) => {
-        alert('Se han agregado ' + counter + ' items al carrito!')
-    }
 
     return (
         <>
             <ItemList arrayObjetos={datos} />
-
-            <ItemCount stock={5} initial={1} onAdd={onAdd} />
         </>
     );
 }

@@ -12,8 +12,6 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         if (counter > 1) setCounter(counter - 1)
     };
 
-
-
     return (
         <div className="itemCountDiv">
             <div className='counterDiv'>
