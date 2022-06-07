@@ -1,18 +1,28 @@
-// import { CartContext } from "./CartContext";
-// import { useContext } from "react";
+import { CartContext } from "./CartContext";
+import { useContext } from "react";
 
 
 
 const Cart = () => {
-    // const test = useContext(CartContext)
+    const contextHook = useContext(CartContext)
     return (
         <>
-            <p> It's a CARTTT!!!!</p>
-            {/* {
-                test.length === 0
+            {
+                contextHook.cartList.length === 0
                     ? <p> Your cart is empty</p>
-                    : test.map((item) => <p>{item.name}</p>)
-            } */}
+                    : contextHook.cartList.map((item) =>
+                        <div className="cartItemFather">
+                            <div>
+
+                            </div>
+
+                            <p>{item.name}</p>
+
+                        </div>
+
+
+                    )
+            }
         </>
     );
 }
