@@ -6,17 +6,17 @@ const CartContextProvider = ({ children }) => {
     const [cartList, setCartList] = useState([]);
 
     const addItem = (item, quantity) => {
-        console.log(item, quantity)
+
 
         const newCartList = [...cartList];
         const elementIndex = newCartList.findIndex((e) => e.id === item.id);
-        console.log("Console elemntindex", elementIndex)
+
         if (elementIndex !== -1) {
-            newCartList[elementIndex].quantity = newCartList[elementIndex].quantity + 1
+            newCartList[elementIndex].quantity = newCartList[elementIndex].quantity + quantity
         } else {
             newCartList.push({ ...item, quantity })
         }
-        console.log(newCartList)
+
         setCartList(newCartList);
     };
 
