@@ -12,7 +12,7 @@ const ItemDetail = ({ item }) => {
 
         alert('Se han agregado ' + count + ' items al carrito!');
         setItemCounter(count);
-        contextHook.addToCart(item, count);
+        contextHook.addItem(item, count);
     }
 
     return (

@@ -5,6 +5,7 @@ import { useContext } from "react";
 
 const Cart = () => {
     const contextHook = useContext(CartContext)
+    console.log(contextHook)
     return (
         <>
             {
@@ -12,15 +13,14 @@ const Cart = () => {
                     ? <p> Your cart is empty</p>
                     : contextHook.cartList.map((item) =>
                         <div className="cartItemFather">
-                            <div>
-
+                            <div className="cartItemInfo">
+                                <img src={item.image} alt={item.description} className='cartItemImg' />
+                                <p>{item.name}</p>
                             </div>
-
-                            <p>{item.name}</p>
-
+                            <div className="cartItemPrice">
+                                <p>{item.price} x {item.quantity}</p>
+                            </div>
                         </div>
-
-
                     )
             }
         </>
