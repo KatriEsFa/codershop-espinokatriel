@@ -1,14 +1,25 @@
-// import { CartContext } from "./CartContext";
-// import { useContext } from "react";
+import { CartContext } from "./CartContext";
+import { useContext } from "react";
 
 const CartWidgetNotifications = () => {
-    // const contextHook = useContext(CartContext)
+    const { consultQuantity, cartList } = useContext(CartContext);
+    const totalQuantity = (array) => {
+        let total = 0;
+        array.forEach(element => {
+            total = total + consultQuantity(element)
+        });
+        return total
+    }
+
+
     return (
-        <div className="cartNotificationsFath">
+
+        <div className={`${totalQuantity(cartList) > 0 ? 'cartNotificationsFath' : 'emptyCartDiv'}`}>
             <h2 className="cartNotificationsNumber">
-                4
+                {totalQuantity(cartList)}
             </h2>
         </div>
+
     );
 }
 

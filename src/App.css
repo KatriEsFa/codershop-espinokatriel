@@ -7,7 +7,7 @@ Reset
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+  font-family: "Montserrat", sans-serif;
 }
 
 /*····························
@@ -21,7 +21,7 @@ Estilos del NavBar
 .navLinksLi,
 .ctaUsBtn,
 .navLink {
-  font-family: "Montserrat", sans-serif;
+
   font-weight: 500;
   font-size: 15px;
   color: #edf0f1;
@@ -175,11 +175,12 @@ Fin de estilos del NavBar
   background-color: rgb(0, 136, 169, 1);
   padding-left: 10px;
   padding-right: 10px;
-  border-radius: 50px;
+
   color: #edf0f1;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 25px;
+  border-radius: 15px;
 }
 
 
@@ -309,6 +310,10 @@ Estilo del item Detail
   flex-direction: row;
 }
 
+.addedDiv {
+  display: flex;
+}
+
 .imageDivItemDetail {
   margin-left: 50px;
   margin-right: 50px;
@@ -329,21 +334,124 @@ Estilo del item Detail
 
 .priceDivItemDetail {
   font-weight: 600;
-  color: #42d189;
+  color: #edf0f1;
   background-color: #24252A;
   border-radius: 60px;
   padding: 5px;
 }
 
+.keepShoppingBtn,
+.clearCartBtn {
+  background-color: #24252A;
+  color: #edf0f1;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 15px;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+
+}
+
 /*··········································
 Fin De Estilo de Item Detail
 ············································*/
+
+
+/* ·········································
+Estilos del carrito
+············································ */
+.cartMainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cartListDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.summaryFath {
+  border: 2px solid grey;
+  background-color: #edf0f1;
+  width: 30rem;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 10px;
+
+}
+
+.shoppingListDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summaryDetails {
+  padding-left: 10px;
+}
+
+.itemsTotalPrices,
+.summaryTaxes,
+.summaryTaxesDiscount,
+.totalCartListDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.shoppingOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summaryTitleDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.summryCheckOut {
+  background-color: #24252A;
+  color: #edf0f1;
+  padding: 10px;
+  border-radius: 15px;
+
+}
+
+.checkoutBtnSummaryDiv {
+  display: flex;
+  justify-content: center;
+
+}
+
+.deleteItemCrtBtn {
+  padding: 9px 25px;
+  background-color: #24252A;
+  color: #edf0f1;
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  font-weight: 600;
+
+}
+
+.emptyCartDiv {
+  display: none;
+}
+
+.deleteItemCrtBtn:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
 .cartItemFather {
   display: flex;
-  border: 2px solid black;
-  background-color: #edf0f1;
   align-items: center;
-
 }
 
 .cartItemInfo {
@@ -363,9 +471,11 @@ Fin De Estilo de Item Detail
   margin-left: 30px;
   font-weight: 800;
   font-size: 35px;
-  color: #42d189;
+  color: #24252A;
 }
 
-/* ·········································
-Estilos del carrito
-············································ */
+
+
+/*····················································
+Fin de los estilos del carrito
+······················································*/

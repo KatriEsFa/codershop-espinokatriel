@@ -1,18 +1,19 @@
 import ItemCount from "./ItemCount";
-import CartCheckOut from "./CartCheckout";
 import { useState, useContext } from "react";
 import { CartContext } from "./CartContext";
+import AddedToCart from "./AddedToCart";
+
 
 
 const ItemDetail = ({ item }) => {
     const [itemCounter, setItemCounter] = useState(0);
-    const contextHook = useContext(CartContext);
+    const { addItem } = useContext(CartContext);
 
     const onAdd = (count) => {
 
         alert('Se han agregado ' + count + ' items al carrito!');
         setItemCounter(count);
-        contextHook.addItem(item, count);
+        addItem(item, count);
     }
 
     return (
@@ -41,7 +42,7 @@ const ItemDetail = ({ item }) => {
                             {
                                 itemCounter === 0
                                     ? <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
-                                    : <CartCheckOut />
+                                    : <AddedToCart />
                             }
                         </div>
 
