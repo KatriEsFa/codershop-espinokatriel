@@ -26,7 +26,7 @@ const CartContextProvider = ({ children }) => {
 
     const calcSubTotal = (array) => {
         let itemTotalPrice = array.map(e => calcTotalPerItem(e));
-        return itemTotalPrice.reduce((previousValue, currentValue) => previousValue + currentValue);
+        return itemTotalPrice.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
     }
 
     const consultQuantity = (item) => {
