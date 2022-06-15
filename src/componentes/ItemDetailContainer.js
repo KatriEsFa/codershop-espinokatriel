@@ -5,10 +5,10 @@ import { firestoreFetchOne } from "../utils/firestoreFetch";
 
 const ItemDetailContainer = () => {
     const [dato, setDato] = useState({});
-    const { idItem } = useParams();
+    const { id } = useParams();
 
     useEffect(() => {
-        firestoreFetchOne(idItem)
+        firestoreFetchOne(id)
             .then(result => setDato(result))
             .catch(err => console.log(err))
     }, []);

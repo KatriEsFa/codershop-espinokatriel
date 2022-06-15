@@ -5,13 +5,12 @@ import db from "./firebaseConfig";
 export const firestoreFetch = async (idCategory) => {
     let q;
     if (idCategory) {
-        q = query(collection(db, "ItemCollection"), where('id', '==', idCategory));
+        q = query(collection(db, "ItemCollection"), where('category.id', '==', Number(idCategory)));
     } else {
         q = query(collection(db, "ItemCollection"), orderBy('name'));
     }
 
     const querySnapshot = await getDocs(q);
-    console.log(querySnapshot)
     const dataFromFirestore = querySnapshot.docs.map(document => ({
         id: document.id,
         ...document.data()
