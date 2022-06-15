@@ -2,6 +2,7 @@ import ItemCount from "./ItemCount";
 import { useState, useContext } from "react";
 import { CartContext } from "./CartContext";
 import AddedToCart from "./AddedToCart";
+import React from "react";
 
 
 

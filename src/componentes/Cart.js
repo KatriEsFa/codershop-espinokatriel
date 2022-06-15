@@ -1,6 +1,7 @@
 import { CartContext } from "./CartContext";
 import { useContext } from "react";
 import KeepShopping from "./KeepShopping";
+import React from "react";
 
 const ClearCartList = () => {
     const { clear } = useContext(CartContext)

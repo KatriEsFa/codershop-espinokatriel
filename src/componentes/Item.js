@@ -1,6 +1,7 @@
 import { GiAbdominalArmor, GiTwoCoins } from 'react-icons/gi';
 import { DiDatabase } from 'react-icons/di';
 import { Link } from 'react-router-dom';
+import React from "react";
 
 const Item = ({ id, title, price, stock, itemImg, description }) => {
 

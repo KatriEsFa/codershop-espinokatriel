@@ -1,5 +1,6 @@
 import { CartContext } from "./CartContext";
 import { useContext } from "react";
+import React from "react";
 
 const CartWidgetNotifications = () => {
     const { consultQuantity, cartList } = useContext(CartContext);

@@ -1,4 +1,4 @@
-
+import React from "react";
 import logomini from '../assets/imgs/logomini.png';
 import CartWidget from '../componentes/CartWidget';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,6 @@
 import shopCartImg from '../assets/imgs/shoppingCart.png';
 import CartWidgetNotifications from './CartWidgetNotifications';
+import React from "react";
 
 const CartWidget = () => {
 
