@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import { CartContext } from "./CartContext";
 import AddedToCart from "./AddedToCart";
 import React from "react";
+import Swal from "sweetalert2";
 
 
 
@@ -12,9 +13,26 @@ const ItemDetail = ({ item }) => {
 
     const onAdd = (count) => {
 
-        alert('Se han agregado ' + count + ' items al carrito!');
-        setItemCounter(count);
-        addItem(item, count);
+        alert.preventDefault(Swal.fire({
+            title: '¿Desea agregar ' + item.name + ' x ' + Number(count) + ' al carrito?',
+            text: "Luego puede quitarlo removerlo del carrito si lo desea",
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, agregar al carrito'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Hecho!',
+                    'Se han agregado ' + item.name + ' x ' + Number(count) + ' al carrito',
+                    'success'
+                )
+                setItemCounter(count);
+                addItem(item, count)
+            }
+        }))
+
     }
 
     return (

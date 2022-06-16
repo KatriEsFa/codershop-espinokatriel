@@ -8,7 +8,6 @@ const ClearCartList = () => {
     return (
         <div className="clearCartBtn" onClick={() => clear()}>
             Clear Cart
-
         </div>
     );
 }
