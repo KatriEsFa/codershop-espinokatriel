@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
         firestoreFetchOne(id)
             .then(result => setDato(result))
             .catch(err => console.log(err))
-    }, []);
+    }, [id]);
 
     return (
         <ItemDetail item={dato} />
