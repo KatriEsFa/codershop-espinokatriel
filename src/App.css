@@ -421,12 +421,14 @@ Estilos del carrito
   color: #edf0f1;
   padding: 10px;
   border-radius: 15px;
+  cursor: pointer;
 
 }
 
 .checkoutBtnSummaryDiv {
   display: flex;
   justify-content: center;
+
 
 }
 

@@ -2,6 +2,13 @@ import { CartContext } from "./CartContext";
 import { useContext } from "react";
 import KeepShopping from "./KeepShopping";
 import React from "react";
+import { serverTimestamp, updateDoc } from "firebase/firestore";
+import Swal from "sweetalert2";
+import db from "../utils/firebaseConfig";
+import { doc, setDoc, collection, increment } from "firebase/firestore";
+
+
+
 
 const ClearCartList = () => {
     const { clear } = useContext(CartContext)
@@ -33,7 +40,52 @@ const CartList = () => {
 };
 
 const CartDetails = () => {
-    const { calcSubTotal, cartList } = useContext(CartContext);
+    const { calcSubTotal, cartList, clearCheckout } = useContext(CartContext);
+
+    const createOrder = () => {
+        const itemsForOrders = cartList.map(item => ({
+            id: item.id,
+            price: item.price,
+            title: item.name,
+            qty: item.quantity
+
+        }))
+        let order = {
+            buyer: {
+                email: "alex.marin@yahoo.es",
+                name: "Alex Marin",
+                phone: "+568 688 6983 323"
+            },
+            date: serverTimestamp(),
+            total: calcSubTotal(cartList),
+            items: itemsForOrders,
+
+        };
+        console.log(order);
+
+        const ordersInFirestore = async () => {
+            const newOrderRef = doc(collection(db, "orders"));
+            await setDoc(newOrderRef, order)
+            return newOrderRef;
+        }
+
+        ordersInFirestore()
+            .then(result => Swal.fire(
+                'Se ha creado su orden',
+                'El ID de su orden es ' + result.id + '!',
+                'success'
+            ))
+            .catch(err => console.log(err))
+        cartList.forEach(async (e) => {
+            const itemRef = doc(db, "ItemCollection", e.id);
+            await updateDoc(itemRef, {
+                stock: increment(-e.quantity)
+            })
+
+        });
+        clearCheckout();
+    }
+
     return (
         <div className="summaryFath">
             <div className="summaryTitleDiv">
@@ -58,9 +110,9 @@ const CartDetails = () => {
                 </div>
             </div>
             <div className="checkoutBtnSummaryDiv">
-                <div className="summryCheckOut">CheckOut Now</div>
+                <div className="summryCheckOut" onClick={() => createOrder()}>CheckOut Now</div>
             </div>
-        </div>
+        </div >
     );
 };
 

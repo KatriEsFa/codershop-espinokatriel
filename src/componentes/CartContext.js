@@ -79,12 +79,17 @@ const CartContextProvider = ({ children }) => {
         })
     };
 
+    const clearCheckout = () => {
+        setCartList([])
+    }
+
     return (
         <CartContext.Provider value={{
             cartList,
             addItem,
             removeItem,
             clear,
+            clearCheckout,
             consultQuantity,
             calcTotalPerItem,
             calcSubTotal
