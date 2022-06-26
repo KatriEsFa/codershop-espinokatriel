@@ -1,14 +1,12 @@
+import { collection, doc, increment, setDoc } from "firebase/firestore";
+import { serverTimestamp, updateDoc } from "firebase/firestore";
+
 import { CartContext } from "../context/CartContext";
-import { useContext } from "react";
 import KeepShopping from "./KeepShopping";
 import React from "react";
-import { serverTimestamp, updateDoc } from "firebase/firestore";
 import Swal from "sweetalert2";
 import db from "../utils/firebaseConfig";
-import { doc, setDoc, collection, increment } from "firebase/firestore";
-
-
-
+import { useContext } from "react";
 
 const ClearCartList = () => {
     const { clear } = useContext(CartContext)
@@ -61,7 +59,7 @@ const CartDetails = () => {
             items: itemsForOrders,
 
         };
-        console.log(order);
+
 
         const ordersInFirestore = async () => {
             const newOrderRef = doc(collection(db, "orders"));

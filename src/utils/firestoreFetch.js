@@ -1,4 +1,4 @@
-import { doc, getDoc, getDocs, query, collection, where, orderBy } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs, orderBy, query, where } from "firebase/firestore";
 
 import db from "./firebaseConfig";
 
@@ -19,6 +19,7 @@ export const firestoreFetch = async (idCategory) => {
     return dataFromFirestore
 }
 
+
 export const firestoreFetchOne = async (idItem) => {
     const docRef = doc(db, "ItemCollection", idItem);
     const docSnap = await getDoc(docRef);
@@ -32,3 +33,4 @@ export const firestoreFetchOne = async (idItem) => {
         console.log("No hay documento!");
     }
 }
+

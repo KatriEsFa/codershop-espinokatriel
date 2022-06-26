@@ -1,11 +1,15 @@
 import './App.css';
-import Navbar from './componentes/Navbar.js';
-import ItemListContainer from './componentes/ItemListContainer';
-import ItemDetailContainer from './componentes/ItemDetailContainer';
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import CartContextProvider from './context/CartContext';
+
 import Cart from './componentes/Cart';
+import CartContextProvider from './context/CartContext';
+import ItemDetailContainer from './componentes/ItemDetailContainer';
+import ItemListContainer from './componentes/ItemListContainer';
+import { Login } from './componentes/logIn/Login';
+import Navbar from './componentes/Navbar.js';
 import React from 'react';
+import { Signup } from './componentes/logIn/Signup';
 
 const App = () => {
   return (
@@ -18,6 +22,8 @@ const App = () => {
             <Route path='/category/:category' element={<ItemListContainer />} />
             <Route path='/item/:id' element={<ItemDetailContainer />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/signup' element={<Signup />} />
           </Routes>
         </BrowserRouter>
       </CartContextProvider>

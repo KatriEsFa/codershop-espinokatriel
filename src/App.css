@@ -5,9 +5,9 @@ Reset
 ···········*/
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
 }
 
 /*····························
@@ -22,9 +22,9 @@ Estilos del NavBar
 .ctaUsBtn,
 .navLink {
 
-  font-weight: 500;
-  font-size: 15px;
   color: #edf0f1;
+  font-size: 15px;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -481,4 +481,31 @@ Estilos del carrito
 
 /*····················································
 Fin de los estilos del carrito
+······················································*/
+
+/*····················································
+Estilos del ABM de usuarios
+······················································*/
+
+.btnFormNewUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  width: 160px;
+  color: #edf0f1;
+}
+
+.btnFormNewUser:hover {
+  background-color: rgba(2, 111, 138, 1);
+}
+
+
+/*····················································
+Fin de los estilos del ABM de usuarios
 ······················································*/
