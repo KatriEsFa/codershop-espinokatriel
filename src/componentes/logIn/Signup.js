@@ -1,21 +1,21 @@
-import { collection, doc, getDoc, setDoc } from "firebase/firestore";
-import { query, where } from "firebase/firestore";
+import { collection, doc, getDocs, query, setDoc, where } from "firebase/firestore";
 
 import Swal from "sweetalert2";
 import db from "../../utils/firebaseConfig";
 import { useState } from "react";
 
 export const Signup = () => {
-    const [newUser, setNewUser] = useState({
+    const [user, setUser] = useState({
         firstName: "",
         lastName: "",
         userName: "",
         userMail: "",
-        userPassword: ""
+        userPassword: "",
+        userPhone: ""
     });
     const handleCreateUser = e => {
-        setNewUser({
-            ...newUser,
+        setUser({
+            ...user,
             [e.target.name]: e.target.value,
         })
     }
@@ -23,33 +23,33 @@ export const Signup = () => {
 
         const usersInFirestore = async () => {
             const newUserRef = doc(collection(db, "users"));
-            await setDoc(newUserRef, newUser)
+            await setDoc(newUserRef, user)
             return newUserRef;
         }
         const usersRef = collection(db, "users");
-        const q = query(usersRef, where("userName", "===", uName));
+        const q = query(usersRef, where("userName", "==", uName));
         let querySnapshot
-        try { querySnapshot = await getDoc(q); }
-        catch (exception) { console.log(exception) }
+        querySnapshot = await getDocs(q);
 
 
-        console.log(querySnapshot.userName)
-
-        if (newUser.userName === querySnapshot.userName) {
+        if (querySnapshot.docs.length > 0) {
             Swal.fire({
                 icon: 'error',
                 title: 'Usuario no disponible',
                 text: 'El usuario que elegiste ya está en uso',
             })
         } else {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'Tu usario ha sido creado correctamente!',
-                showConfirmButton: false,
-                timer: 1500
-            })
             usersInFirestore()
+                .then(
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Tu usario ha sido creado correctamente!',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                )
+
         }
 
     }
@@ -65,7 +65,7 @@ export const Signup = () => {
                         <input
                             type="text"
                             name="userName"
-                            value={newUser.userName}
+                            value={user.userName}
                             onChange={handleCreateUser}
                         />
                     </div>
@@ -76,7 +76,7 @@ export const Signup = () => {
                         <input
                             type="text"
                             name="firstName"
-                            value={newUser.firstName}
+                            value={user.firstName}
                             onChange={handleCreateUser}
                         />
                     </label>{" "}
@@ -85,7 +85,7 @@ export const Signup = () => {
                         <input
                             type="text"
                             name="lastName"
-                            value={newUser.lastName}
+                            value={user.lastName}
                             onChange={handleCreateUser}
                         />
                     </label>{" "}
@@ -97,7 +97,7 @@ export const Signup = () => {
                         <input
                             type="email"
                             name="userMail"
-                            value={newUser.userMail}
+                            value={user.userMail}
                             onChange={handleCreateUser}
                         />
                     </label> {" "}
@@ -108,13 +108,24 @@ export const Signup = () => {
                         <input
                             type="password"
                             name="userPassword"
-                            vlaue={newUser.userPassword}
+                            value={user.userPassword}
+                            onChange={handleCreateUser}
+                        />
+                    </label> {" "}
+                </div>
+                <div className="newUserPhoneDiv">
+                    <label>
+                        Número de telefono: {" "}
+                        <input
+                            type="text"
+                            name="userPhone"
+                            value={user.userPhone}
                             onChange={handleCreateUser}
                         />
                     </label> {" "}
                 </div>
 
-                <div className="btnFormNewUser" onClick={() => createUser(newUser.userName)} > Registrarse </div>
+                <div className="btnFormNewUser" onClick={() => createUser(user.userName)} > Registrarse </div>
             </form>
         </div>
 

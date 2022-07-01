@@ -13,13 +13,13 @@ Reset
 /*····························
 Estilos del NavBar
 ······························*/
-.ctaUsBtn,
+.logInBtn,
 .navFather {
   background-color: #24252A;
 }
 
 .navLinksLi,
-.ctaUsBtn,
+.logInBtn,
 .navLink {
 
   color: #edf0f1;
@@ -61,7 +61,7 @@ Estilos del NavBar
 }
 
 /*Estilos del Botón de Contactanos*/
-.ctaUsBtn {
+.logInBtn {
   padding: 9px 25px;
   background-color: rgba(0, 136, 169, 1);
   border: none;
@@ -71,7 +71,7 @@ Estilos del NavBar
 
 }
 
-.ctaUsBtn:hover {
+.logInBtn:hover {
 
   background-color: rgba(0, 136, 169, 0.8);
 }
@@ -487,7 +487,8 @@ Fin de los estilos del carrito
 Estilos del ABM de usuarios
 ······················································*/
 
-.btnFormNewUser {
+.btnFormNewUser,
+.btnFormLogedUser {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -499,9 +500,11 @@ Estilos del ABM de usuarios
   cursor: pointer;
   width: 160px;
   color: #edf0f1;
+  text-decoration: none;
 }
 
-.btnFormNewUser:hover {
+.btnFormNewUser:hover,
+.btnFormLogedUser:hover {
   background-color: rgba(2, 111, 138, 1);
 }
 

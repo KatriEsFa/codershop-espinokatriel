@@ -34,3 +34,18 @@ export const firestoreFetchOne = async (idItem) => {
     }
 }
 
+export const firestoreFetchUser = async (uName) => {
+    const userRef = doc(db, "users", uName);
+    const userSnap = await getDoc(userRef);
+    console.log(userSnap)
+
+    if (userSnap.exists()) {
+        return {
+            name: uName,
+            ...userSnap.data()//esto probablemente también devuelva la contraseña, falta manejar esa excepcion
+        }
+    } else {
+        console.log("No hay usuario!")
+    }
+}
+

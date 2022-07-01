@@ -1,7 +1,8 @@
-import React from "react";
-import logomini from '../assets/imgs/logomini.png';
 import CartWidget from '../componentes/CartWidget';
 import { Link } from 'react-router-dom';
+import React from "react";
+import logomini from '../assets/imgs/logomini.png';
+
 const Navbar = () => {
     return (
         <div className='navFather'>
@@ -16,7 +17,7 @@ const Navbar = () => {
                     <li className='navLinksLi'><Link to='/category/3' className='navLink'>Bebidas</Link></li>
                 </ul>
             </nav>
-            <button className='ctaUsBtn'>Contáctanos</button>
+            <button className='logInBtn'><Link to='/Login' className='logInBtn'>Log In</Link></button>
             <Link to="/cart">
                 <CartWidget />
             </Link>
